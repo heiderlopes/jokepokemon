@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">JoKenPokemon</string>
+    <string name="action_settings">Configurações</string>
+    <string name="opcoes">Escolha um Pokémon</string>
+    <string name="ultimaJogada">Última Jogada</string>
+    <string name="jogadaPlayer">Você</string>
+    <string name="resultado">Resultado</string>
+    <string name="jogadaPC">Computador</string>
+</resources>

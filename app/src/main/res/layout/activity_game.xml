@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:id="@+id/cabecalho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vitórias: "
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/tvNumeroVitorias"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Empates: "
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/tvNumeroEmpates"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Derrotas: "
+                    android:textColor="#FFFFFF"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/tvNumeroDerrotas"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="#ffffff"
+            android:layout_marginTop="8dp"
+            android:layout_margin="0dp"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VENCEU"
+            android:gravity="center"
+            android:id="@+id/tvResultadoRodada"
+            android:textStyle="bold"
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rodape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#d9bbbb"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="Escolha seu pokémon da rodada"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btSquirtle"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_above="@+id/textView2"
+                android:layout_margin="8dp"
+                android:layout_toLeftOf="@+id/button2"
+                android:background="@drawable/op_squirtle" />
+
+            <Button
+                android:id="@+id/btCharmander"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_above="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dp"
+                android:background="@drawable/op_charmander" />
+
+            <Button
+                android:id="@+id/btBulbassaur"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_above="@+id/textView2"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/button2"
+                android:background="@drawable/op_bulbassaur" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/masculino"
+                android:id="@+id/ivSexo"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jogador: "
+                android:textColor="#FFFFFF" />
+            <TextView
+                android:id="@+id/tvNomeJogador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heider Lopes"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rodape"
+        android:layout_below="@id/cabecalho"
+        android:background="@drawable/stadium"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivPokemonPlayer1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/textView4"
+            android:layout_toLeftOf="@+id/imageView2"
+            android:layout_weight="1"
+            android:src="@drawable/squirtle" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView4"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="VS"
+            android:textColor="#FFFFFF"
+            android:textSize="42sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivPokemonPlayer2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/textView4"
+            android:layout_toRightOf="@+id/imageView2"
+            android:layout_weight="1"
+            android:src="@drawable/bulbasaur" />
+    </LinearLayout>
+</RelativeLayout>
